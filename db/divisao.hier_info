@@ -1,0 +1,250 @@
+|divisao
+Reset => bc:BCportMap.Reset
+clk => bo:BOportMap.clk
+clk => bc:BCportMap.clk
+inicio => bc:BCportMap.inicio
+entA[0] => bo:BOportMap.entA[0]
+entA[1] => bo:BOportMap.entA[1]
+entA[2] => bo:BOportMap.entA[2]
+entA[3] => bo:BOportMap.entA[3]
+entB[0] => bo:BOportMap.entB[0]
+entB[1] => bo:BOportMap.entB[1]
+entB[2] => bo:BOportMap.entB[2]
+entB[3] => bo:BOportMap.entB[3]
+pronto <= bc:BCportMap.pronto
+resto[0] <= bo:BOportMap.resto[0]
+resto[1] <= bo:BOportMap.resto[1]
+resto[2] <= bo:BOportMap.resto[2]
+resto[3] <= bo:BOportMap.resto[3]
+resultado[0] <= bo:BOportMap.resultado[0]
+resultado[1] <= bo:BOportMap.resultado[1]
+resultado[2] <= bo:BOportMap.resultado[2]
+resultado[3] <= bo:BOportMap.resultado[3]
+
+
+|divisao|bo:BOportMap
+clk => registrador:registradorA.clk
+clk => registrador:registradorB.clk
+clk => registrador:registradorResto.clk
+clk => registrador:registradorContador.clk
+clk => registrador:registradorResultado.clk
+mA => mux2para1:mux1.sel
+cA => registrador:registradorA.carga
+cB => registrador:registradorB.carga
+cResto => registrador:registradorResto.carga
+mQuociente => mux2para1:muxContador.sel
+cQuociente => registrador:registradorContador.carga
+cResultado => registrador:registradorResultado.carga
+entA[0] => mux2para1:mux1.b[0]
+entA[1] => mux2para1:mux1.b[1]
+entA[2] => mux2para1:mux1.b[2]
+entA[3] => mux2para1:mux1.b[3]
+entB[0] => registrador:registradorB.d[0]
+entB[1] => registrador:registradorB.d[1]
+entB[2] => registrador:registradorB.d[2]
+entB[3] => registrador:registradorB.d[3]
+AmenorB <= comparador:comparadorAB.s
+resto[0] <= registrador:registradorResto.q[0]
+resto[1] <= registrador:registradorResto.q[1]
+resto[2] <= registrador:registradorResto.q[2]
+resto[3] <= registrador:registradorResto.q[3]
+resultado[0] <= registrador:registradorResultado.q[0]
+resultado[1] <= registrador:registradorResultado.q[1]
+resultado[2] <= registrador:registradorResultado.q[2]
+resultado[3] <= registrador:registradorResultado.q[3]
+
+
+|divisao|bo:BOportMap|mux2para1:mux1
+a[0] => y.DATAB
+a[1] => y.DATAB
+a[2] => y.DATAB
+a[3] => y.DATAB
+b[0] => y.DATAA
+b[1] => y.DATAA
+b[2] => y.DATAA
+b[3] => y.DATAA
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|registrador:registradorA
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|registrador:registradorB
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|comparador:comparadorAB
+a[0] => LessThan0.IN4
+a[1] => LessThan0.IN3
+a[2] => LessThan0.IN2
+a[3] => LessThan0.IN1
+b[0] => LessThan0.IN8
+b[1] => LessThan0.IN7
+b[2] => LessThan0.IN6
+b[3] => LessThan0.IN5
+s <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|subtrator:subtratorAB
+a[0] => Add0.IN8
+a[1] => Add0.IN7
+a[2] => Add0.IN6
+a[3] => Add0.IN5
+b[0] => Add0.IN4
+b[1] => Add0.IN3
+b[2] => Add0.IN2
+b[3] => Add0.IN1
+s[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|registrador:registradorResto
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|mux2para1:muxContador
+a[0] => y.DATAB
+a[1] => y.DATAB
+a[2] => y.DATAB
+a[3] => y.DATAB
+b[0] => y.DATAA
+b[1] => y.DATAA
+b[2] => y.DATAA
+b[3] => y.DATAA
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|registrador:registradorContador
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|somador:somaContador
+a[0] => Add0.IN4
+a[1] => Add0.IN3
+a[2] => Add0.IN2
+a[3] => Add0.IN1
+b[0] => Add0.IN8
+b[1] => Add0.IN7
+b[2] => Add0.IN6
+b[3] => Add0.IN5
+s[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bo:BOportMap|registrador:registradorResultado
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+carga => q[0]~reg0.ENA
+carga => q[1]~reg0.ENA
+carga => q[2]~reg0.ENA
+carga => q[3]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisao|bc:BCportMap
+Reset => state~3.DATAIN
+clk => state~1.DATAIN
+inicio => state.DATAB
+inicio => Selector0.IN1
+AmenorB => Selector0.IN3
+AmenorB => Selector2.IN2
+AmenorB => Selector3.IN1
+AmenorB => state.DATAB
+pronto <= pronto$latch.DB_MAX_OUTPUT_PORT_TYPE
+mA <= mA$latch.DB_MAX_OUTPUT_PORT_TYPE
+cA <= cA$latch.DB_MAX_OUTPUT_PORT_TYPE
+cB <= cB$latch.DB_MAX_OUTPUT_PORT_TYPE
+cResto <= cResto$latch.DB_MAX_OUTPUT_PORT_TYPE
+cQuociente <= cQuociente$latch.DB_MAX_OUTPUT_PORT_TYPE
+mQuociente <= mQuociente$latch.DB_MAX_OUTPUT_PORT_TYPE
+cResultado <= cResultado$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
