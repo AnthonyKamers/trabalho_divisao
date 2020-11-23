@@ -1,0 +1,195 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do divisao_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/mux2para1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/subtrator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity subtrator
+# -- Compiling architecture estrutura of subtrator
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/somador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity somador
+# -- Compiling architecture estrutura of somador
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/bo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture estrutura of bo
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comparador
+# -- Compiling architecture estrutura of comparador
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BC/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity divisao
+# -- Compiling architecture bhv of divisao
+# 
+vcom -reportprogress 300 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisao_tb
+# -- Compiling architecture tb of divisao_tb
+vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divisao_tb
+# vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divisao_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.divisao_tb(tb)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.divisao(bhv)
+# Loading work.bo(estrutura)
+# Loading work.mux2para1(comportamento)
+# Loading work.registrador(estrutura)
+# Loading work.comparador(estrutura)
+# Loading work.subtrator(estrutura)
+# Loading work.somador(estrutura)
+# Loading work.bc(estrutura)
+# do divisao_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/mux2para1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2para1
+# -- Compiling architecture comportamento of mux2para1
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity registrador
+# -- Compiling architecture estrutura of registrador
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/subtrator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity subtrator
+# -- Compiling architecture estrutura of subtrator
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/somador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity somador
+# -- Compiling architecture estrutura of somador
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/bo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bo
+# -- Compiling architecture estrutura of bo
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comparador
+# -- Compiling architecture estrutura of comparador
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BC/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bc
+# -- Compiling architecture estrutura of bc
+# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity divisao
+# -- Compiling architecture bhv of divisao
+# 
+add wave *
+run 400 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/somaContador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/subtratorAB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/subtratorAB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/comparadorAB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/comparadorAB

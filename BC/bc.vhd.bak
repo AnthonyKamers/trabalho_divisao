@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY bc IS
+PORT (Reset, clk, inicio: IN STD_LOGIC;
+      AmenorB: IN STD_LOGIC;
+      pronto: OUT STD_LOGIC;
+      mA, cA, cB, cResto, cQuociente, mQuociente, cResultado: OUT STD_LOGIC );
+END bc;
+
+ARCHITECTURE estrutura OF bc IS
+	--TYPE state_type IS (S0, S1, S2, S3, S4, S5 );
+	--SIGNAL state: state_type;
+BEGIN
+	
+END estrutura;
