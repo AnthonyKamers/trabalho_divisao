@@ -185,9 +185,9 @@ add wave *
 add wave -position end  sim:/divisao_tb/D1/BCportMap/state
 add wave -position end  sim:/divisao_tb/D1/BOportMap/AmenorB
 add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaSubtrator
-add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaMux1
+add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaSomador
+add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaQuociente
 add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaMuxContador
-add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaRegA
 run 400ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/somaContador

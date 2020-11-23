@@ -38,7 +38,13 @@ BEGIN
 						END IF;
 					
 					WHEN S3 =>
-						state <= S2;
+						--state <= S2;
+						
+						IF (not AmenorB = '1') THEN
+							state <= S2;
+						ELSE
+							state <= S0;
+						END IF;
 				END CASE;
 			END IF;
 		END PROCESS;
@@ -77,10 +83,15 @@ BEGIN
 				END IF;
 				
 			WHEN S3 =>
-				mA <= '0';
-				cA <= '1';
-				mQuociente <= '0';
-				cQuociente <= '1';
+				IF (not AmenorB = '1') THEN
+					mA <= '0';
+					cA <= '1';
+					mQuociente <= '0';
+					cQuociente <= '1';
+				ELSE
+					cResto <= '1';
+					cResultado <= '1';
+				END IF;
 				
 		END CASE;
 	END PROCESS;

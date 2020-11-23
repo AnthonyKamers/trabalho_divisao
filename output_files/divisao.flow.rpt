@@ -1,5 +1,5 @@
 Flow report for divisao
-Mon Nov 23 18:49:32 2020
+Mon Nov 23 19:44:00 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 23 18:49:32 2020           ;
+; Flow Status                        ; Successful - Mon Nov 23 19:44:00 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; divisao                                         ;
 ; Top-level Entity Name              ; divisao                                         ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C5F256C6                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 37                                              ;
-;     Total combinational functions  ; 25                                              ;
+; Total logic elements               ; 39                                              ;
+;     Total combinational functions  ; 27                                              ;
 ;     Dedicated logic registers      ; 24                                              ;
 ; Total registers                    ; 24                                              ;
 ; Total pins                         ; 20                                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2020 18:49:31 ;
+; Start date & time ; 11/23/2020 19:43:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; divisao             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 141812761671015.160616817108564 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 141812761671015.160617143904428 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
