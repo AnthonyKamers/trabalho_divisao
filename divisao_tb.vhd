@@ -28,8 +28,11 @@ begin
 		
 	 Reset <= '1', '0' after 10 ns;
 	 inicio <= '1' after 20 ns, '0' after 40 ns;
-	 entA <= "10010000"; --144
-	 entB <= "00001100"; --12
+	 entA <= "00000001"; --1
+	 entB <= "00000011"; --3
+	 
+	 --entA <= "10010000"; --144
+	 --entB <= "00001100"; --12
 	 
 	 
 	 -- processo gerador de clock

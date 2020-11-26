@@ -81,21 +81,23 @@
 # -- Compiling entity divisao
 # -- Compiling architecture bhv of divisao
 # 
-vcom -reportprogress 300 -work work C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Pr·tica/Trabalho_Divisao/divisao_tb.vhd
+vcom -reportprogress 300 -work work C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Pr·tica/Trabalho_Divisao/testbench_master.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity divisao_tb
-# -- Compiling architecture tb of divisao_tb
-vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divisao_tb
-# vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divisao_tb 
+# -- Loading package std_logic_textio
+# -- Compiling entity testbench_master
+# -- Compiling architecture tb of testbench_master
+vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench_master
+# vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench_master 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.divisao_tb(tb)
+# Loading ieee.std_logic_textio(body)
+# Loading work.testbench_master(tb)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.divisao(bhv)
@@ -185,27 +187,37 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Compiling entity divisao
 # -- Compiling architecture bhv of divisao
 # 
-add wave *
-add wave -position end  sim:/divisao_tb/D1/BCportMap/state
-add wave -position end  sim:/divisao_tb/D1/BOportMap/tudoZero
-add wave -position end  sim:/divisao_tb/D1/BOportMap/valor1
-add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaSubtrator
-add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaRegA
-add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaMux1
-add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaMuxContador
-run 400ns
+run -all
+# ** Error: (vsim-7) Failed to open VHDL file "C:\Users\antho\Desktop\Anthony\UFSC\2020.1\SD\Pr√°tica\Trabalho_Divisao\entradas.txt" in rb mode.
+# 
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master
+# ** Error: (vsim-7) Failed to open VHDL file "C:\Users\antho\Desktop\Anthony\UFSC\2020.1\SD\Pr√°tica\Trabalho_Divisao\saidas_tb.txt" in r+ mode.
+# 
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/somaContador
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master/D1/BOportMap/somaContador
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/somaContador
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master/D1/BOportMap/somaContador
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/subtratorAB
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master/D1/BOportMap/subtratorAB
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/subtratorAB
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master/D1/BOportMap/subtratorAB
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/comparadorAB
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master/D1/BOportMap/comparadorAB
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/comparadorAB
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_master/D1/BOportMap/comparadorAB
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /divisao_tb/D1/BOportMap/somaContador
-run 400ns
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_master/D1/BOportMap/somaContador
+# ** Fatal: (vsim-7) Failed to open VHDL file "C:\Users\antho\Desktop\Anthony\UFSC\2020.1\SD\Pr√°tica\Trabalho_Divisao\entradas.txt" in rb mode.
+# 
+# No such file or directory. (errno = ENOENT)
+#    Time: 20 ns  Iteration: 0  Process: /testbench_master/file_io File: C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Pr·tica/Trabalho_Divisao/testbench_master.vhd
+# Fatal error in Process file_io at C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Pr·tica/Trabalho_Divisao/testbench_master.vhd line 64
+# 
+# HDL call sequence:
+# Stopped at C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Pr·tica/Trabalho_Divisao/testbench_master.vhd 64 Process file_io
+# 
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line

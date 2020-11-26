@@ -15,7 +15,7 @@ L4
 V1j5nH4bbM9:c6cHAof^QX2
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1606390954.313000
+Z8 !s108 1606394197.701000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BC/bc.vhd|
 Z10 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BC/bc.vhd|
 Z11 o-93 -work work -O0
@@ -52,7 +52,7 @@ L5
 VnB23U4>:eFFG:[?WZEJ=J1
 R7
 31
-Z18 !s108 1606390953.455000
+Z18 !s108 1606394197.244000
 Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd|
 Z20 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd|
 R11
@@ -91,7 +91,7 @@ L5
 VcK`WB7[LjQzWmb3UGHMDP1
 R7
 31
-Z24 !s108 1606390953.884000
+Z24 !s108 1606394197.463000
 Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/comparador.vhd|
 Z26 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/comparador.vhd|
 R11
@@ -132,7 +132,7 @@ VSZ:M@d;M^h8<07j=KmzoY2
 R7
 31
 !i10b 1
-Z30 !s108 1606390954.725000
+Z30 !s108 1606394197.920000
 Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/divisao.vhd|
 Z32 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/divisao.vhd|
 R11
@@ -167,7 +167,7 @@ L4
 VkV[<<<XzFX?`0h<mZE^dQ0
 R7
 31
-Z36 !s108 1606390952.112000
+Z36 !s108 1606394196.388000
 Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/mux2para1.vhd|
 Z38 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/mux2para1.vhd|
 R11
@@ -204,7 +204,7 @@ L5
 V[faa4m_cBNBZOC_:=X_;N1
 R7
 31
-Z42 !s108 1606390952.523000
+Z42 !s108 1606394196.618000
 Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/registrador.vhd|
 Z44 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/registrador.vhd|
 R11
@@ -243,7 +243,7 @@ L5
 V@^jLdMSC3n=4ki3?XNh3o2
 R7
 31
-Z48 !s108 1606390953.121000
+Z48 !s108 1606394197.058000
 Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/somador.vhd|
 Z50 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/somador.vhd|
 R11
@@ -282,7 +282,7 @@ L5
 V@S90mL9?dlMHk4k]aOiP;2
 R7
 31
-Z54 !s108 1606390952.808000
+Z54 !s108 1606394196.841000
 Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/subtrator.vhd|
 Z56 !s107 C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/subtrator.vhd|
 R11
