@@ -1,5 +1,5 @@
 EDA Netlist Writer report for divisao
-Mon Nov 23 19:51:40 2020
+Mon Nov 23 20:21:43 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Nov 23 19:51:40 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 23 20:21:43 2020 ;
 ; Revision Name             ; divisao                               ;
 ; Top-level Entity Name     ; divisao                               ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                         ;
-+--------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                    ;
-+--------------------------------------------------------------------------------------------------------------------+
-; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/simulation/modelsim/divisao.vho          ;
-; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/simulation/modelsim/divisao_fast.vho     ;
-; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/simulation/modelsim/divisao_vhd.sdo      ;
-; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/simulation/modelsim/divisao_vhd_fast.sdo ;
-+--------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                      ;
++-----------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                 ;
++-----------------------------------------------------------------------------------------------------------------+
+; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/simulation/modelsim/divisao.vho          ;
+; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/simulation/modelsim/divisao_fast.vho     ;
+; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/simulation/modelsim/divisao_vhd.sdo      ;
+; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/simulation/modelsim/divisao_vhd_fast.sdo ;
++-----------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 23 19:51:39 2020
+    Info: Processing started: Mon Nov 23 20:21:42 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off divisao -c divisao
-Info (204026): Generated files "divisao.vho", "divisao_fast.vho", "divisao_vhd.sdo" and "divisao_vhd_fast.sdo" in directory "C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "divisao.vho", "divisao_fast.vho", "divisao_vhd.sdo" and "divisao_vhd_fast.sdo" in directory "C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4523 megabytes
-    Info: Processing ended: Mon Nov 23 19:51:40 2020
+    Info: Peak virtual memory: 4513 megabytes
+    Info: Processing ended: Mon Nov 23 20:21:43 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Nov 23 19:51:27 2020
+Analysis & Synthesis Status : Successful - Thu Nov 26 08:41:35 2020
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : divisao
 Top-level Entity Name : divisao
 Family : Cyclone II
-Total logic elements : 36
-    Total combinational functions : 24
-    Dedicated logic registers : 24
-Total registers : 24
-Total pins : 20
+Total logic elements : 60
+    Total combinational functions : 36
+    Dedicated logic registers : 44
+Total registers : 44
+Total pins : 36
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -10,14 +10,14 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/mux2para1.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/mux2para1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2para1
 # -- Compiling architecture comportamento of mux2para1
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/registrador.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/registrador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,7 +26,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity registrador
 # -- Compiling architecture estrutura of registrador
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/subtrator.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/subtrator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,7 +35,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity subtrator
 # -- Compiling architecture estrutura of subtrator
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/somador.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/somador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,7 +44,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity somador
 # -- Compiling architecture estrutura of somador
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/bo.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -53,7 +53,9 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity bo
 # -- Compiling architecture estrutura of bo
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/comparador.vhd}
+# ** Warning: C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd(58): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/comparador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -62,14 +64,14 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity comparador
 # -- Compiling architecture estrutura of comparador
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BC/bc.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BC/bc.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bc
 # -- Compiling architecture estrutura of bc
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/divisao.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -79,7 +81,7 @@
 # -- Compiling entity divisao
 # -- Compiling architecture bhv of divisao
 # 
-vcom -reportprogress 300 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao_tb.vhd}
+vcom -reportprogress 300 -work work C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/divisao_tb.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -112,14 +114,14 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/mux2para1.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/mux2para1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2para1
 # -- Compiling architecture comportamento of mux2para1
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/registrador.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/registrador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -128,7 +130,7 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity registrador
 # -- Compiling architecture estrutura of registrador
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/subtrator.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/subtrator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,7 +139,7 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity subtrator
 # -- Compiling architecture estrutura of subtrator
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/somador.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/somador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -146,7 +148,7 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity somador
 # -- Compiling architecture estrutura of somador
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/bo.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -155,7 +157,9 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity bo
 # -- Compiling architecture estrutura of bo
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/comparador.vhd}
+# ** Warning: C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd(58): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/comparador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -164,14 +168,14 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity comparador
 # -- Compiling architecture estrutura of comparador
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BC/bc.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BC/bc.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bc
 # -- Compiling architecture estrutura of bc
-# vcom -93 -work work {C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao.vhd}
+# vcom -93 -work work {C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/divisao.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -182,7 +186,16 @@ vsim +altera -do divisao_run_msim_rtl_vhdl.do -l msim_transcript -gui work.divis
 # -- Compiling architecture bhv of divisao
 # 
 add wave *
-run 400 ns
+add wave -position end  sim:/divisao_tb/D1/BCportMap/state
+add wave -position end  sim:/divisao_tb/D1/BOportMap/tudoZero
+add wave -position end  sim:/divisao_tb/D1/BOportMap/valor1
+add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaSubtrator
+add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaRegA
+add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaMux1
+add wave -position end  sim:/divisao_tb/D1/BOportMap/saidaMuxContador
+run 400ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/somaContador
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/somaContador
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -193,3 +206,6 @@ run 400 ns
 #    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/comparadorAB
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /divisao_tb/D1/BOportMap/comparadorAB
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /divisao_tb/D1/BOportMap/somaContador
+run 400ns

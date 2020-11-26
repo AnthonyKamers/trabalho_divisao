@@ -1,5 +1,5 @@
 Analysis & Synthesis report for divisao
-Mon Nov 23 19:51:27 2020
+Thu Nov 26 08:41:35 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,10 +16,22 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. State Machine - |divisao|bc:BCportMap|state
   9. User-Specified and Inferred Latches
  10. General Register Statistics
- 11. Port Connectivity Checks: "bo:BOportMap|somador:somaContador"
- 12. Port Connectivity Checks: "bo:BOportMap|mux2para1:muxContador"
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |divisao
+ 12. Parameter Settings for User Entity Instance: bo:BOportMap
+ 13. Parameter Settings for User Entity Instance: bo:BOportMap|mux2para1:mux1
+ 14. Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorA
+ 15. Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorB
+ 16. Parameter Settings for User Entity Instance: bo:BOportMap|comparador:comparadorAB
+ 17. Parameter Settings for User Entity Instance: bo:BOportMap|subtrator:subtratorAB
+ 18. Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorResto
+ 19. Parameter Settings for User Entity Instance: bo:BOportMap|mux2para1:muxContador
+ 20. Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorContador
+ 21. Parameter Settings for User Entity Instance: bo:BOportMap|somador:somaContador
+ 22. Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorResultado
+ 23. Port Connectivity Checks: "bo:BOportMap|somador:somaContador"
+ 24. Port Connectivity Checks: "bo:BOportMap|mux2para1:muxContador"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +57,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 23 19:51:27 2020           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 26 08:41:35 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; divisao                                         ;
 ; Top-level Entity Name              ; divisao                                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 36                                              ;
-;     Total combinational functions  ; 24                                              ;
-;     Dedicated logic registers      ; 24                                              ;
-; Total registers                    ; 24                                              ;
-; Total pins                         ; 20                                              ;
+; Total logic elements               ; 60                                              ;
+;     Total combinational functions  ; 36                                              ;
+;     Dedicated logic registers      ; 44                                              ;
+; Total registers                    ; 44                                              ;
+; Total pins                         ; 36                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -153,25 +165,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                 ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
-; BO/mux2para1.vhd                 ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/mux2para1.vhd   ;         ;
-; BO/registrador.vhd               ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/registrador.vhd ;         ;
-; BO/subtrator.vhd                 ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/subtrator.vhd   ;         ;
-; BO/somador.vhd                   ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/somador.vhd     ;         ;
-; BO/bo.vhd                        ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/bo.vhd          ;         ;
-; BO/comparador.vhd                ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BO/comparador.vhd  ;         ;
-; BC/bc.vhd                        ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/BC/bc.vhd          ;         ;
-; divisao.vhd                      ; yes             ; User VHDL File  ; C:/Users/julio/Desktop/UFSC/Semestre 2/SD/divisor/trabalho_divisao-master/divisao.vhd        ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                              ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+; BO/mux2para1.vhd                 ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/mux2para1.vhd   ;         ;
+; BO/registrador.vhd               ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/registrador.vhd ;         ;
+; BO/subtrator.vhd                 ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/subtrator.vhd   ;         ;
+; BO/somador.vhd                   ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/somador.vhd     ;         ;
+; BO/bo.vhd                        ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/bo.vhd          ;         ;
+; BO/comparador.vhd                ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BO/comparador.vhd  ;         ;
+; BC/bc.vhd                        ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/BC/bc.vhd          ;         ;
+; divisao.vhd                      ; yes             ; User VHDL File  ; C:/Users/antho/Desktop/Anthony/UFSC/2020.1/SD/Prática/Trabalho_Divisao/divisao.vhd        ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -179,28 +191,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 36    ;
+; Estimated Total logic elements              ; 60    ;
 ;                                             ;       ;
-; Total combinational functions               ; 24    ;
+; Total combinational functions               ; 36    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 7     ;
-;     -- 3 input functions                    ; 10    ;
-;     -- <=2 input functions                  ; 7     ;
+;     -- 4 input functions                    ; 1     ;
+;     -- 3 input functions                    ; 19    ;
+;     -- <=2 input functions                  ; 16    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 21    ;
-;     -- arithmetic mode                      ; 3     ;
+;     -- normal mode                          ; 15    ;
+;     -- arithmetic mode                      ; 21    ;
 ;                                             ;       ;
-; Total registers                             ; 24    ;
-;     -- Dedicated logic registers            ; 24    ;
+; Total registers                             ; 44    ;
+;     -- Dedicated logic registers            ; 44    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 20    ;
+; I/O pins                                    ; 36    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 24    ;
-; Total fan-out                               ; 161   ;
-; Average fan-out                             ; 2.37  ;
+; Maximum fan-out                             ; 44    ;
+; Total fan-out                               ; 265   ;
+; Average fan-out                             ; 2.28  ;
 +---------------------------------------------+-------+
 
 
@@ -209,17 +221,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
-; |divisao                                 ; 24 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |divisao                                               ; work         ;
+; |divisao                                 ; 36 (0)            ; 44 (0)       ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |divisao                                               ; work         ;
 ;    |bc:BCportMap|                        ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bc:BCportMap                                  ; work         ;
-;    |bo:BOportMap|                        ; 12 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap                                  ; work         ;
-;       |comparador:comparadorAB|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|comparador:comparadorAB          ; work         ;
-;       |mux2para1:muxContador|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|mux2para1:muxContador            ; work         ;
-;       |registrador:registradorA|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorA         ; work         ;
-;       |registrador:registradorB|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorB         ; work         ;
-;       |registrador:registradorContador|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorContador  ; work         ;
-;       |registrador:registradorResto|     ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorResto     ; work         ;
-;       |registrador:registradorResultado| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorResultado ; work         ;
-;       |somador:somaContador|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|somador:somaContador             ; work         ;
+;    |bo:BOportMap|                        ; 24 (0)            ; 40 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap                                  ; work         ;
+;       |comparador:comparadorAB|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|comparador:comparadorAB          ; work         ;
+;       |registrador:registradorA|         ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorA         ; work         ;
+;       |registrador:registradorB|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorB         ; work         ;
+;       |registrador:registradorContador|  ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorContador  ; work         ;
+;       |registrador:registradorResto|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorResto     ; work         ;
+;       |registrador:registradorResultado| ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |divisao|bo:BOportMap|registrador:registradorResultado ; work         ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -258,14 +268,134 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 4     ;
+; Total registers                              ; 44    ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 20    ;
+; Number of registers using Clock Enable       ; 40    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |divisao ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; n              ; 8     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|mux2para1:mux1 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorA ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorB ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|comparador:comparadorAB ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|subtrator:subtratorAB ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorResto ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|mux2para1:muxContador ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorContador ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|somador:somaContador ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bo:BOportMap|registrador:registradorResultado ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------+
@@ -273,7 +403,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------+-------+----------+----------------------------------+
 ; Port    ; Type  ; Severity ; Details                          ;
 +---------+-------+----------+----------------------------------+
-; b[3..1] ; Input ; Info     ; Stuck at GND                     ;
+; b[7..1] ; Input ; Info     ; Stuck at GND                     ;
 ; b[0]    ; Input ; Info     ; Stuck at VCC                     ;
 +---------+-------+----------+----------------------------------+
 
@@ -302,7 +432,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 23 19:51:24 2020
+    Info: Processing started: Thu Nov 26 08:41:31 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off divisao -c divisao
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file bo/mux2para1.vhd
@@ -356,14 +486,14 @@ Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
     Info (13026): Duplicate LATCH primitive "bc:BCportMap|mQuociente" merged with LATCH primitive "bc:BCportMap|mA"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 37 logic cells
+Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 61 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4637 megabytes
-    Info: Processing ended: Mon Nov 23 19:51:27 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4634 megabytes
+    Info: Processing ended: Thu Nov 26 08:41:35 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
